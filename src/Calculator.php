@@ -15,21 +15,29 @@ class Calculator
 
     public function add()
     {
-        return (new Add($this->number1, $this->number2))->add();
+        $add = new Add($this->number1, $this->number2);
+
+        return $add->add();
     }
 
     public function minus()
     {
-        return (new Minus($this->number1, $this->number2))->minus();
+        $minus = new Minus($this->number1, $this->number2);
+
+        return $minus->minus();
     }
 
     public function mul()
     {
-        return (new Mul($this->number1, $this->number2))->mul();
+        $mul = new Mul($this->number1, $this->number2);
+
+        return $mul->mul();
     }
 
     public function division()
     {
-        return (new Division($this->number1, $this->number2))->division();
+        $division = new Division($this->number1, $this->number2);
+
+        return $division->division();
     }
 }
